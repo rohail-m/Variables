@@ -45,54 +45,70 @@
       //   console.log("Fail");
       // }
 
-      const resultCard = (
-        computer,
-        english,
-        web_development,
-        bootstrap,
-        name,
-        cls
-      ) => {
-        totalMarks = 400;
-        marksObtained = computer + english + web_development + bootstrap;
-        let percentage = ((marksObtained / totalMarks) * 100).toFixed(2);
-        if (percentage >= 90 && percentage <= 100) {
-          console.log(
-            `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade A+`
-          );
-        } else if (percentage >= 80 && percentage < 90) {
-          console.log(
-            `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade A`
-          );
-        } else if (percentage >= 70 && percentage < 80) {
-          console.log(
-            `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade B`
-          );
-        } else if (percentage >= 60 && percentage < 70) {
-          console.log(
-            `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade C`
-          );
-        } else if (percentage >= 50 && percentage < 60) {
-          console.log(
-            `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade D`
-          );
-        } else if (percentage >= 40 && percentage < 50) {
-          console.log(
-            `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade E`
-          );
-        } else {
-          console.log(
-            `Sorry! ${name} failed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade F`
-          );
-        }
-      };
+      // const resultCard = (
+      //   computer,
+      //   english,
+      //   web_development,
+      //   bootstrap,
+      //   name,
+      //   cls
+      // ) => {
+      //   totalMarks = 400;
+      //   marksObtained = computer + english + web_development + bootstrap;
+      //   let percentage = ((marksObtained / totalMarks) * 100).toFixed(2);
+      //   if (percentage >= 90 && percentage <= 100) {
+      //     console.log(
+      //       `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade A+`
+      //     );
+      //   } else if (percentage >= 80 && percentage < 90) {
+      //     console.log(
+      //       `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade A`
+      //     );
+      //   } else if (percentage >= 70 && percentage < 80) {
+      //     console.log(
+      //       `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade B`
+      //     );
+      //   } else if (percentage >= 60 && percentage < 70) {
+      //     console.log(
+      //       `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade C`
+      //     );
+      //   } else if (percentage >= 50 && percentage < 60) {
+      //     console.log(
+      //       `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade D`
+      //     );
+      //   } else if (percentage >= 40 && percentage < 50) {
+      //     console.log(
+      //       `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade E`
+      //     );
+      //   } else {
+      //     console.log(
+      //       `Sorry! ${name} failed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade F`
+      //     );
+      //   }
+      // };
 
-      resultCard(50, 60, 80, 92, "Nimra", "12");
-      resultCard(82, 92, 53, 88, "Marryam", "11th");
-      resultCard(50, 55, 65, 75, "Adeel", "10th");
-      resultCard(77, 58, 53, 88, "Khadija", "11th");
-      resultCard(100, 94, 99, 95, "Rohail :)", "14th");
-      resultCard(20, 30, 10, 40, "Joe", "9th");
+      // resultCard(50, 60, 80, 92, "Nimra", "12");
+      // resultCard(82, 92, 53, 88, "Marryam", "11th");
+      // resultCard(50, 55, 65, 75, "Adeel", "10th");
+      // resultCard(77, 58, 53, 88, "Khadija", "11th");
+      // resultCard(100, 94, 99, 95, "Rohail :)", "14th");
+      // resultCard(20, 30, 10, 40, "Joe", "9th");
+
+      for (let i = 0; i < 10; i++) {
+        console.log(`2 X ${i + 1} = ${(i + 1) * 2}`);
+      }
+
+      let a = 0;
+      while (a < 10) {
+        console.log(`3 X ${a + 1} = ${(a + 1) * 3}`);
+        a++;
+      }
+
+      let b = 0;
+      do {
+        console.log(`4 X ${b + 1} = ${(b + 1) * 4}`);
+        b++;
+      } while (b < 10);
     </script>
   </body>
 </html>
