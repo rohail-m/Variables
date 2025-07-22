@@ -94,21 +94,70 @@
       // resultCard(100, 94, 99, 95, "Rohail :)", "14th");
       // resultCard(20, 30, 10, 40, "Joe", "9th");
 
-      for (let i = 0; i < 10; i++) {
-        console.log(`2 X ${i + 1} = ${(i + 1) * 2}`);
-      }
+      // for (let i = 0; i < 10; i++) {
+      //   console.log(`2 X ${i + 1} = ${(i + 1) * 2}`);
+      // }
 
-      let a = 0;
-      while (a < 10) {
-        console.log(`3 X ${a + 1} = ${(a + 1) * 3}`);
-        a++;
-      }
+      // let a = 0;
+      // while (a < 10) {
+      //   console.log(`3 X ${a + 1} = ${(a + 1) * 3}`);
+      //   a++;
+      // }
 
-      let b = 0;
-      do {
-        console.log(`4 X ${b + 1} = ${(b + 1) * 4}`);
-        b++;
-      } while (b < 10);
+      // let b = 0;
+      // do {
+      //   console.log(`4 X ${b + 1} = ${(b + 1) * 4}`);
+      //   b++;
+      // } while (b < 10);
+
+      // let countries = ["Pakistan", "USA", "UAE", "UK", "ANZ"];
+
+      // countries.forEach((items, index) => {
+      //   console.log(items);
+      // });
+
+      // const book = {
+      //   author: "abc",
+      //   pages: 44,
+      //   name: "xyz",
+      // };
+
+      // console.log(book);
+
+      let books = [
+        {
+          book_name: "to kill a mockingbird",
+          author: "harper lee",
+          pages: 281,
+        },
+        { book_name: "1984", author: "heorger owell", pages: 328 },
+        {
+          book_name: "pride and prejustice",
+          author: "jane austen",
+          pages: 279,
+        },
+        { book_name: "the great gatsby", author: "f.Scott", pages: 180 },
+        {
+          book_name: "harry potter and the sorceres stones",
+          author: "J.K.Rowling",
+          pages: 309,
+        },
+        {
+          book_name: "the catcher in the rye",
+          author: "J.D.Slinger",
+          pages: 277,
+        },
+        { book_name: "the hobbit", author: "J.R.R Tolkein", pages: 310 },
+        { book_name: "the alchemist", author: "paulao coeleo", pages: 208 },
+      ];
+
+      books.forEach((items, index) => {
+        console.log(`book ${index + 1}:`);
+        console.log(`Name of book is ${items.book_name}`);
+        console.log(`Name of Author is ${items.author}`);
+        console.log(`Total number of pages is ${items.pages}`);
+        console.log("__________________________________");
+      });
     </script>
   </body>
 </html>
