@@ -124,40 +124,64 @@
 
       // console.log(book);
 
-      let books = [
-        {
-          book_name: "to kill a mockingbird",
-          author: "harper lee",
-          pages: 281,
-        },
-        { book_name: "1984", author: "heorger owell", pages: 328 },
-        {
-          book_name: "pride and prejustice",
-          author: "jane austen",
-          pages: 279,
-        },
-        { book_name: "the great gatsby", author: "f.Scott", pages: 180 },
-        {
-          book_name: "harry potter and the sorceres stones",
-          author: "J.K.Rowling",
-          pages: 309,
-        },
-        {
-          book_name: "the catcher in the rye",
-          author: "J.D.Slinger",
-          pages: 277,
-        },
-        { book_name: "the hobbit", author: "J.R.R Tolkein", pages: 310 },
-        { book_name: "the alchemist", author: "paulao coeleo", pages: 208 },
-      ];
+      let array = [2, 4, 6, 8, 10];
 
-      books.forEach((items, index) => {
-        console.log(`book ${index + 1}:`);
-        console.log(`Name of book is ${items.book_name}`);
-        console.log(`Name of Author is ${items.author}`);
-        console.log(`Total number of pages is ${items.pages}`);
-        console.log("__________________________________");
-      });
+      function sumArray(arr) {
+        let sum = 0;
+        arr.forEach((item) => {
+          sum += item;
+        });
+        return sum;
+      }
+
+      function multiplyArray(arr) {
+        let product = 1;
+        arr.forEach((item) => {
+          product *= item;
+        });
+        return product;
+      }
+
+      let sum = sumArray(array);
+      let mul = multiplyArray(array);
+
+      console.log(`Sum of all numbers is: ${sum}`);
+      console.log(`Multiplication of all numbers is: ${mul}`);
+
+      // let books = [
+      //   {
+      //     book_name: "to kill a mockingbird",
+      //     author: "harper lee",
+      //     pages: 281,
+      //   },
+      //   { book_name: "1984", author: "heorger owell", pages: 328 },
+      //   {
+      //     book_name: "pride and prejustice",
+      //     author: "jane austen",
+      //     pages: 279,
+      //   },
+      //   { book_name: "the great gatsby", author: "f.Scott", pages: 180 },
+      //   {
+      //     book_name: "harry potter and the sorceres stones",
+      //     author: "J.K.Rowling",
+      //     pages: 309,
+      //   },
+      //   {
+      //     book_name: "the catcher in the rye",
+      //     author: "J.D.Slinger",
+      //     pages: 277,
+      //   },
+      //   { book_name: "the hobbit", author: "J.R.R Tolkein", pages: 310 },
+      //   { book_name: "the alchemist", author: "paulao coeleo", pages: 208 },
+      // ];
+
+      // books.forEach((items, index) => {
+      //   console.log(`book ${index + 1}:`);
+      //   console.log(`Name of book is ${items.book_name}`);
+      //   console.log(`Name of Author is ${items.author}`);
+      //   console.log(`Total number of pages is ${items.pages}`);
+      //   console.log("__________________________________");
+      // });
     </script>
   </body>
 </html>
