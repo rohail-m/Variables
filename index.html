@@ -4,10 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
+    <style>
+      #container {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      #image {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: left 0.5s;
+      }
+
+      #buttons {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+      }
+    </style>
   </head>
   <body>
+    <!-- assignment # 1 -->
     <h1 class="heading">JavaScript</h1>
     <button class="press">click me</button>
+
+    <div id="container">
+      <img
+        id="image"
+        src="https://pneumatico.com.lb/images/category/2382362992468a90.png"
+        alt="Moving Image"
+      />
+    </div>
+
+    <!-- <button onclick="moveForward()">Forward</button>
+      <button onclick="moveBackward()">Reverse</button> -->
+    <button id="fwd">Forward</button>
+    <button id="rev">Reverse</button>
+
     <script>
       let head = document.querySelector(".heading");
       let btn = document.querySelector(".press");
@@ -20,6 +57,23 @@
           head.innerHTML = "Javascript";
           head.style.color = "gray";
         }
+      });
+
+      // assignment # 2
+
+      let image = document.querySelector("#image");
+      let forward = document.querySelector("#fwd");
+      let reverse = document.querySelector("#rev");
+      let position = 0;
+
+      forward.addEventListener("click", () => {
+        position += 50;
+        image.style.left = position + "px";
+      });
+
+      reverse.addEventListener("click", () => {
+        position -= 50;
+        image.style.left = position + "px";
       });
     </script>
   </body>
