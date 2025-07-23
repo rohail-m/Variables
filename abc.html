@@ -1,0 +1,187 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let name = "Rohail";
+      // let professional = "Media operation";
+      // let organization = "Radio Pakistan";
+      // let year = 2017;
+      // let state = "New York";
+      // let hobby = "playing Cricket";
+
+      // console.log(
+      //   `Hello, My name is ${name}, I am a dedicated and detail-oriented professional with a
+      //   background in ${professional}, including proposal creation, scheduling, and
+      //   transmission management at ${organization} since ${year}. Currently based in
+      //    ${state}, I am expanding my skills in technology and design while actively
+      //     pursuing new career opportunities. My hobby is ${hobby}. `
+      // );
+
+      // let computer = 80;
+      // let english = 70;
+      // let web_development = 80;
+      // let bootstrap = 92;
+
+      // let obtained_marks = computer + english + web_development + bootstrap;
+      // let total_marks = 400;
+      // let percentage = (obtained_marks / total_marks) * 100;
+
+      // if (percentage >= 90 && percentage <= 100) {
+      //   console.log("A+");
+      // } else if (percentage >= 80 && percentage < 90) {
+      //   console.log("A");
+      // } else if (percentage >= 70 && percentage < 80) {
+      //   console.log("B");
+      // } else if (percentage >= 60 && percentage < 70) {
+      //   console.log("C");
+      // } else if (percentage >= 50 && percentage < 60) {
+      //   console.log("D");
+      // } else {
+      //   console.log("Fail");
+      // }
+
+      // const resultCard = (
+      //   computer,
+      //   english,
+      //   web_development,
+      //   bootstrap,
+      //   name,
+      //   cls
+      // ) => {
+      //   totalMarks = 400;
+      //   marksObtained = computer + english + web_development + bootstrap;
+      //   let percentage = ((marksObtained / totalMarks) * 100).toFixed(2);
+      //   if (percentage >= 90 && percentage <= 100) {
+      //     console.log(
+      //       `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade A+`
+      //     );
+      //   } else if (percentage >= 80 && percentage < 90) {
+      //     console.log(
+      //       `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade A`
+      //     );
+      //   } else if (percentage >= 70 && percentage < 80) {
+      //     console.log(
+      //       `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade B`
+      //     );
+      //   } else if (percentage >= 60 && percentage < 70) {
+      //     console.log(
+      //       `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade C`
+      //     );
+      //   } else if (percentage >= 50 && percentage < 60) {
+      //     console.log(
+      //       `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade D`
+      //     );
+      //   } else if (percentage >= 40 && percentage < 50) {
+      //     console.log(
+      //       `Congrats! ${name} passed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade E`
+      //     );
+      //   } else {
+      //     console.log(
+      //       `Sorry! ${name} failed with ${marksObtained} out of ${totalMarks} having percentage of ${percentage} with grade F`
+      //     );
+      //   }
+      // };
+
+      // resultCard(50, 60, 80, 92, "Nimra", "12");
+      // resultCard(82, 92, 53, 88, "Marryam", "11th");
+      // resultCard(50, 55, 65, 75, "Adeel", "10th");
+      // resultCard(77, 58, 53, 88, "Khadija", "11th");
+      // resultCard(100, 94, 99, 95, "Rohail :)", "14th");
+      // resultCard(20, 30, 10, 40, "Joe", "9th");
+
+      // for (let i = 0; i < 10; i++) {
+      //   console.log(`2 X ${i + 1} = ${(i + 1) * 2}`);
+      // }
+
+      // let a = 0;
+      // while (a < 10) {
+      //   console.log(`3 X ${a + 1} = ${(a + 1) * 3}`);
+      //   a++;
+      // }
+
+      // let b = 0;
+      // do {
+      //   console.log(`4 X ${b + 1} = ${(b + 1) * 4}`);
+      //   b++;
+      // } while (b < 10);
+
+      // let countries = ["Pakistan", "USA", "UAE", "UK", "ANZ"];
+
+      // countries.forEach((items, index) => {
+      //   console.log(items);
+      // });
+
+      // const book = {
+      //   author: "abc",
+      //   pages: 44,
+      //   name: "xyz",
+      // };
+
+      // console.log(book);
+
+      let array = [2, 4, 6, 8, 10];
+
+      function sumArray(arr) {
+        let sum = 0;
+        arr.forEach((item) => {
+          sum += item;
+        });
+        return sum;
+      }
+
+      function multiplyArray(arr) {
+        let product = 1;
+        arr.forEach((item) => {
+          product *= item;
+        });
+        return product;
+      }
+
+      let sum = sumArray(array);
+      let mul = multiplyArray(array);
+
+      console.log(`Sum of all numbers is: ${sum}`);
+      console.log(`Multiplication of all numbers is: ${mul}`);
+
+      let books = [
+        {
+          book_name: "to kill a mockingbird",
+          author: "harper lee",
+          pages: 281,
+        },
+        { book_name: "1984", author: "heorger owell", pages: 328 },
+        {
+          book_name: "pride and prejustice",
+          author: "jane austen",
+          pages: 279,
+        },
+        { book_name: "the great gatsby", author: "f.Scott", pages: 180 },
+        {
+          book_name: "harry potter and the sorceres stones",
+          author: "J.K.Rowling",
+          pages: 309,
+        },
+        {
+          book_name: "the catcher in the rye",
+          author: "J.D.Slinger",
+          pages: 277,
+        },
+        { book_name: "the hobbit", author: "J.R.R Tolkein", pages: 310 },
+        { book_name: "the alchemist", author: "paulao coeleo", pages: 208 },
+      ];
+
+      books.forEach((items, index) => {
+        console.log(`book ${index + 1}:`);
+        console.log(`Name of book is ${items.book_name}`);
+        console.log(`Name of Author is ${items.author}`);
+        console.log(`Total number of pages is ${items.pages}`);
+        console.log("__________________________________");
+      });
+    </script>
+  </body>
+</html> -->
